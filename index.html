@@ -1,74 +1,265 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Flex Layout</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Browny</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <body>
+            <header>
+               <a href="index.html"><div class="logo">BROWNY</div></a>
+              <nav>
+                <ul>
+                  <li><a href="education.html">EDUCATION</a></li>
+                  <li><a href="skill.html">SKILLS</a></li>
+                  <li><a href="index.html">EXPERIENCE</a></li>
+                  <li><a href="profile.html">PROFILE</a></li>
+                  <li><a href="portfolio.html">PORTFOLIO</a></li>
+                  <li><a href="clients.html">CLIENTS</a></li>
+                  <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+              </nav>
+            </header>
+          <main>
+            <section id="hero">
+              <div class="overlay">
+                <div class="hero-text">
+                  <h1>HI , I AM <br> <span class="bold">BROWNY</span><br> STAR</h1>
+                  <p>UI/UX DESIGNER AND WEB DEVELOPER</p>
+                  <a href="#" class="btn">Download Resume</a>
+                </div>
+              </div>
+            </section>
+            <!----end of hero section-->
 
-    .container {
-      padding: 20px;
-      border: 3px solid black;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
+            <section id="profile-section">
+              <div class="profile-content">
+                <div class="text-block">
+                  <h2>I am a Professional UI/UX Designer and Web developer. Consectetur an <br>adipisci elita, sed do eiusmod tempor incididunt ut labore et dolore <br>magna aliqua. Ut 
+                    enim ad minim veniam quis nostrud.</h2>
+                  
+                  <p class="description">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
+                    eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                  </p>
+          
+                  <div class="contact-info">
+                    <div><strong>Phone</strong><br>987-123-6547</div>
+                    <div><strong>Email</strong><br>browny@info.com</div>
+                    <div><strong>Website</strong><br>www.brownsine.com</div>
+                  </div>
+                </div>
+          
+                <div class="image-block">
+                  <img src="profileimg.jpg" alt="Profile Photo" />
+                  <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-dribbble"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!--end of profile-section-->
 
-    .top {
-      display: flex;
-      gap: 10px;
-    }
+            <section id="education-section">
+              <h2>EDUCATION</h2>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-point"></div>
+                  <div class="timeline-content">
+                    <h4>2008 - 2010</h4>
+                    <p class="degree">Master of Computer Science</p>
+                    <h5>UNIVERSITY OF NORTH CAROLINA</h5>
+                    <p class="location">North Carolina, USA</p>
+                    <p class="desc">
+                      Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari.
+                      Excepteur sint occana inna tecat cupidatat non proident.
+                    </p>
+                  </div>
+                </div>
+            
+                <div class="timeline-item">
+                  <div class="timeline-point"></div>
+                  <div class="timeline-content">
+                    <h4>2004 - 2008</h4>
+                    <p class="degree">Bachelor of Computer Science</p>
+                    <h5>UNIVERSITY OF NORTH CAROLINA</h5>
+                    <p class="location">North Carolina, USA</p>
+                    <p class="desc">
+                      Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari.
+                      Excepteur sint occana inna tecat cupidatat non proident.
+                    </p>
+                  </div>
+                </div>
+            
+                <div class="timeline-item">
+                  <div class="timeline-point"></div>
+                  <div class="timeline-content">
+                    <h4>2004 - 2008</h4>
+                    <p class="degree">Bachelor of Creative Design</p>
+                    <h5>UNIVERSITY OF BOLTON</h5>
+                    <p class="location">Bolton, United Kingdom</p>
+                    <p class="desc">
+                      Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari.
+                      Excepteur sint occana inna tecat cupidatat non proident.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+             <!--end of education-section-->
 
-    .top-left {
-      flex: 3;
-      border: 3px solid black;
-      min-height: 100px;
-    }
-
-    .top-right {
-      flex: 1;
-      border: 3px solid black;
-      min-height: 100px;
-    }
-
-    .middle {
-      display: flex;
-      gap: 10px;
-      min-height: 300px;
-    }
-
-    .middle-box {
-      flex: 1;
-      border: 3px solid black;
-      min-height: 150px;
-    }
-
-    .bottom {
-      border: 3px solid black;
-      min-height: 100px;
-    }
-  </style>
-</head>
-<body>
-
-  <div class="container">
-    <div class="top">
-      <div class="top-left"></div>
-      <div class="top-right"></div>
+          <section id="skills">
+    <h1>SKILLS</h1>
+    <div class="skills-container">
+     
+      <div class="column">
+        <div class="skill">
+          <div class="skill-name">Adobe Photoshop</div>
+          <div class="progress"><div class="bar"></div></div>
+          <div class="percent">90%</div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">Adobe Illustrator</div>
+          <div class="progress"><div class="bar"></div></div>
+          <div class="percent">85%</div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">Adobe After Effects</div>
+          <div class="progress"><div class="bar"></div></div>
+          <div class="percent">97%</div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">Sketch</div>
+          <div class="progress"><div class="bar"></div></div>
+          <div class="percent">90%</div>
+        </div>
+      </div>
+ 
+      <div class="column">
+        <div class="skill">
+          <div class="skill-name">HTML 5</div>
+          <div class="progress"><div class="bar"></div></div>
+          <div class="percent">90%</div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">CSS 3 Animation</div>
+          <div class="progress"><div class="bar"></div></div>
+          <div class="percent">85%</div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">Communication</div>
+          <div class="progress"><div class="bar"></div></div>
+          <div class="percent">97%</div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">Creativity</div>
+          <div class="progress"><div class="bar"></div></div>
+          <div class="percent">90%</div>
+        </div>
+      </div>
     </div>
+          </section>
+            <!--end of skill-->
 
-    <div class="middle">
-      <div class="middle-box"></div>
-      <div class="middle-box"></div>
-      <div class="middle-box"></div>
-      <div class="middle-box"></div>
+
+  <section class="pro-section">
+    <h2 class="section-title">PROFILES</h2>
+    <div class="grid-container">
+      <div class="grid-item"><i class="fa-solid fa-folders"></i>Themeforest</div>
+      <div class="grid-item"><i class="fa-solid fa-basketball"></i>Dribbble</div>
+      <div class="grid-item"><i class="fa-brands fa-square-behance"></i>Behance</div>
+      <div class="grid-item"><i class="fa-brands fa-github"></i>Github</div>
+      <div class="grid-item"><i class="fa-brands fa-flickr"></i>FlickR</div>
+      <div class="grid-item"><i class="fa-solid fa-face-smile"></i>SmungMung</div>
+      <div class="grid-item"><i class="fa-brands fa-squarespace"></i>SquareSpace</div>
+      <div class="grid-item"><i class="fa-brands fa-bitbucket"></i>BitBucket</div>
     </div>
+  </section>
+   <!--end of  Profiles Section -->
 
-    <div class="bottom"></div>
+  <section class="client-section">
+    <h2 class="section-title">CLIENTS</h2>
+    <hr>
+    <div class="clients-container">
+      <img src="ubisoft.png" alt="Image not found">
+      <img src="disney.png" alt="Image not found">
+      <img src="john.png" alt="Image not found">
+      <img src="cisco.png" alt="Image not found">
+      <img src="street.png" alt="Image not found">
+      <img src="kinder.png" alt="Image not found">
+      <img src="gilead.png" alt="Image not found">
+    </div>
+  </section>
+     <!-- end of Clients Section -->
+<hr>
+</main>
+
+          
+          
+  <footer>
+  <section id="contact-section">
+  <div class="contact-title">CONTACT ME</div>
+
+  <div class="contact-container">
+    
+    <form class="contact-form">
+      <div class="form-row">
+        <input type="text" placeholder="Name*" required>
+        <input type="email" placeholder="Email*" required>
+      </div>
+      <input type="text" placeholder="Subject">
+      <textarea placeholder="Message" rows="5"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+
+   
+    <div class="contact-info">
+      <h3>Browny Star</h3>
+      <p>UI/UX Designer</p>
+
+      <div class="info-group">
+        <strong>Phone</strong>
+        <p>987-123-6547</p>
+      </div>
+
+      <div class="info-group">
+        <strong>Email</strong>
+        <p>browny@info.com</p>
+      </div>
+
+      <div class="info-group">
+        <strong>Website</strong>
+        <p>www.brownsine.com</p>
+      </div>
+
+      <div class="social">
+        <a href="#"><i class="fab fa-dribbble"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
   </div>
+</section>
+<section id="last">
+  <div>
+    <p class="p">&copy; copyright yourname. design and developed by themesine</p>
+  </div>
+  </section>
 
-</body>
+
+          </footer>
+    
+    </body>
 </html>
